@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h1.
+        Video List
+    div(class="grid")
+        each video, i in videos
+            div(class="gridItem")
+                img(src=video.thumbnailURL)
+                div(class="videoName") #{video.name}
+                div(class="videoDesc") #{video.shortDescription}

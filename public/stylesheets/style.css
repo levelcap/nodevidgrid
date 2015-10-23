@@ -1,0 +1,40 @@
+body {
+    padding: 30px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: black;
+}
+.gridItem {
+    background: rgba(27,27,0,.8);
+    width: 30%;
+    min-height: 200px;
+    margin-bottom: 10px;
+}
+
+.gridItem img {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.videoName {
+    font-size: 16px;
+    display: none;
+    position: absolute;
+    top: 0px;
+    padding: 5px 0px 5px 0px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: rgba(55,55,55,.8);
+}
+.videoDesc {
+    font-size: 12px;
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    padding: 5px 0px 5px 0px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: rgba(55,55,55,.8);
+}
