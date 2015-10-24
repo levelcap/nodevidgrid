@@ -2,7 +2,13 @@ body {
     padding: 30px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
     background-color: black;
+    color: white;
 }
+
+h1 {
+    text-align: center;
+}
+
 .gridItem {
     background: rgba(27,27,0,.8);
     width: 30%;
@@ -16,7 +22,7 @@ body {
     max-width: 100%;
 }
 
-.videoName {
+.gridItem .videoName {
     font-size: 16px;
     display: none;
     position: absolute;
@@ -24,10 +30,10 @@ body {
     padding: 5px 0px 5px 0px;
     width: 100%;
     text-align: center;
-    color: white;
     background: rgba(55,55,55,.8);
+    color: white;
 }
-.videoDesc {
+.gridItem .videoDesc {
     font-size: 12px;
     display: none;
     position: absolute;
@@ -35,6 +41,45 @@ body {
     padding: 5px 0px 5px 0px;
     width: 100%;
     text-align: center;
-    color: white;
     background: rgba(55,55,55,.8);
+    color: white;
+}
+
+.videoView iframe {
+    display: block;
+    margin: auto;
+}
+.videoView .videoName {
+    display: block;
+    width: 560px;
+    margin: auto;
+}
+
+.videoView .videoDesc {
+    display: block;
+    width: 560px;
+    margin: auto;
+}
+
+.goBack {
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    top: 20px;
+    right: 20px;
+}
+
+.goBack a {
+    text-decoration: none;
+    color: white;
+}
+
+.videoInfo {
+    display: inline-block;
+    width: 45%;
+    padding: 2%;
+}
+
+.videoInfoLine {
+    line-height: 1.5;
 }

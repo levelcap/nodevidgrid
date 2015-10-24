@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    h1.
+        Video View
+    div(class="goBack")
+        a(href="/") X
+    div(class="videoInfo")
+        div(class="videoInfoLine") #{video.name}
+        div(class="videoInfoLine") #{video.shortDescription}
+        div(class="videoInfoLine") Published: #{moment.utc(parseInt(video.publishedDate)).format("MM/DD/YYYY")}
+        div(class="videoInfoLine") Length: #{moment.duration(video.length, 'milliseconds').format()}
+        div(class="videoInfoLine") Plays: #{video.playsTotal}
+    div(class="videoInfo")
+        img(src=video.thumbnailURL)

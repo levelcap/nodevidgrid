@@ -59,4 +59,19 @@ router.get('/', function (req, res, next) {
     }
 });
 
+router.get('/:id', function(req,res) {
+    var videoId = req.params.id;
+    var thisVideo = null;
+    videos.items.forEach(function(video) {
+        if (video.id == videoId) {
+            thisVideo = video;
+        }
+    });
+
+    res.render('video', {
+        "title" : "Video View",
+        "video": thisVideo
+    });
+});
+
 module.exports = router;

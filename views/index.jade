@@ -5,7 +5,8 @@ block content
         Video List
     div(class="grid")
         each video, i in videos
-            div(class="gridItem")
-                img(src=video.thumbnailURL)
-                div(class="videoName") #{video.name}
-                div(class="videoDesc") #{video.shortDescription}
+            a(href="/" + video.id)
+                div(class="gridItem")
+                    img(src=video.thumbnailURL)
+                    div(class="videoName") #{video.name}
+                    div(class="videoDesc") #{video.shortDescription}
